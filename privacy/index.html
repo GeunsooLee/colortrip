@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Color Trip 개인정보처리방침</title>
+<meta name="description" content="여행 지도 색칠 앱 Color Trip의 개인정보처리방침">
+<link rel="alternate" hreflang="ko" href="https://geunsoolee.github.io/colortrip/privacy/">
+<link rel="alternate" hreflang="en" href="https://geunsoolee.github.io/colortrip/privacy/en/">
+<style>
+  /* 아이폰 · 아이패드(iOS 26 WebKit)는 -apple-system 으로 한글을 물음표 상자로 그려서, 한글만 애플 산돌고딕 Neo 로 이어 준다 */
+  @font-face { font-family: "CT Korean"; font-weight: 400; src: local("Apple SD Gothic Neo"), local("AppleSDGothicNeo-Regular"); unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+AC00-D7FF, U+FF00-FFEF; }
+  @font-face { font-family: "CT Korean"; font-weight: 700; src: local("AppleSDGothicNeo-Bold"); unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+AC00-D7FF, U+FF00-FFEF; }
+  :root {
+    --bg: #fdf2ec; --paper: #fffaf7; --ink: #2c2320; --muted: #7a6a63; --line: #f2ddd2; --accent: #de5a37;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #17120f; --paper: #201815; --ink: #efe3dc; --muted: #a8968d; --line: #3a2d27; --accent: #ff8d6a; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.75 "CT Korean", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    word-break: keep-all; overflow-wrap: anywhere;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+  .card { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 32px 28px; }
+  .top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .eyebrow { margin: 0; font-size: 13px; letter-spacing: 0.25em; color: var(--accent); }
+  .lang { margin: 0; font-size: 14px; color: var(--muted); }
+  .lang a, .lang strong { margin-left: 8px; }
+  h1 { margin: 6px 0 4px; font-size: 28px; line-height: 1.3; }
+  .date { margin: 0 0 24px; color: var(--muted); font-size: 14px; }
+  h2 { margin: 36px 0 10px; font-size: 19px; line-height: 1.4; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 1.2em; margin: 8px 0; }
+  li { margin: 4px 0; }
+  .muted { color: var(--muted); }
+  .lead { border-left: 3px solid var(--accent); padding: 2px 0 2px 14px; margin: 18px 0 0; }
+  .lead li { margin: 6px 0; }
+  .table-wrap { overflow-x: auto; margin: 12px 0; border: 1px solid var(--line); border-radius: 12px; }
+  table { width: 100%; min-width: 560px; border-collapse: collapse; font-size: 14.5px; line-height: 1.6; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 700; background: color-mix(in srgb, var(--line) 45%, transparent); }
+  tr:last-child td { border-bottom: 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 20px; text-align: center; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <article class="card">
+    <div class="top">
+      <p class="eyebrow">COLOR TRIP</p>
+      <p class="lang"><strong>한국어</strong><a href="en/" hreflang="en" lang="en">English</a></p>
+    </div>
+    <h1>개인정보처리방침</h1>
+    <p class="date">시행일: 2026년 9월 16일</p>
+
+    <p>Color Trip(이하 ‘앱’)은 개발자 DGSTUDIO(이하 ‘개발자’)가 만든 여행 지도 색칠 앱입니다. 다녀온 지역을 지도에 칠하고, 메모를 남기고, 친구와 지도를 함께 칠할 수 있습니다. 이 방침은 앱이 어떤 정보를 어떻게 다루는지 설명합니다.</p>
+
+    <ul class="lead">
+      <li>회원가입이 없습니다. 이름 · 이메일 · 전화번호를 묻지 않습니다.</li>
+      <li><strong>사진은 서버로 전송되지 않습니다.</strong> 휴대전화 안에서만 분석하고 저장합니다.</li>
+      <li>위치(GPS) 권한을 요청하지 않습니다. 사진에 이미 들어 있는 촬영 위치만 읽습니다.</li>
+      <li>칠한 지역과 메모는 함께 칠하기를 위해 개발자의 서버(Google Firebase)에 저장됩니다.</li>
+    </ul>
+
+    <h2>1. 회원가입 없이 만들어지는 익명 계정</h2>
+    <ul>
+      <li>앱을 처음 켜면 Google Firebase 인증이 <strong>익명 계정</strong>을 자동으로 만듭니다. 이 계정은 임의의 문자열일 뿐이며, 이름 · 이메일 · 전화번호 · 소셜 계정과 연결되지 않습니다.</li>
+      <li>이 익명 계정은 “어느 지도가 내 것인지”, “이 메모를 누가 썼는지”를 구분하는 데만 쓰입니다.</li>
+      <li>기본 닉네임(예: ‘여행자 A1B2’)이 자동으로 붙으며, 앱 안에서 언제든 바꿀 수 있습니다. 실명을 넣지 않으셔도 됩니다.</li>
+    </ul>
+
+    <h2>2. 서버에 저장되는 정보</h2>
+    <p>함께 칠하기 기능과 기기 간 동기화를 위해 아래 정보가 Google Firebase(Cloud Firestore, 서울 리전)에 저장됩니다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>저장되는 것</th><th>예시</th><th>왜 필요한가</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>익명 계정 식별자</td><td>임의의 문자열</td><td>내 지도와 내가 쓴 기록을 구분</td></tr>
+          <tr><td>닉네임</td><td>여행자 A1B2, 사용자가 정한 이름</td><td>함께 칠하는 사람에게 누가 칠했는지 표시</td></tr>
+          <tr><td>지도 정보</td><td>지도 이름, 초대 코드, 참여자 목록</td><td>지도를 함께 쓰기 위해</td></tr>
+          <tr><td>칠한 기록</td><td>지역 코드(예: 수원시), 색, 칠한 시각, 칠한 사람</td><td>지도를 다시 그리고 변경을 알리기 위해</td></tr>
+          <tr><td>메모</td><td>사용자가 입력한 글(최대 1,000자), 작성자, 작성 시각</td><td>기록을 보관하고 함께 보기 위해</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li>개발자는 위 정보 외에 광고 식별자 · 기기 정보 · 위치 · 사용 기록을 수집하거나 보관하지 않습니다.</li>
+      <li>메모에 개인정보나 민감한 내용을 적지 않으시길 권합니다. 지도를 함께 쓰는 사람에게 그대로 보입니다.</li>
+    </ul>
+
+    <h2>3. 사진과 촬영 위치 — 휴대전화 밖으로 나가지 않습니다</h2>
+    <ul>
+      <li>앱은 사진 보관함 접근 권한을 요청합니다. 사진에 들어 있는 <strong>촬영 위치(EXIF · PhotoKit)</strong>를 읽어 “어느 지역에 다녀왔는지”를 찾아 추천하기 위해서입니다.</li>
+      <li>이 분석은 전부 휴대전화 안에서 이루어집니다. 사진 파일도, 좌표도, 분석 결과도 <strong>서버로 전송되지 않습니다.</strong></li>
+      <li>분석 결과(사진 식별자 · 촬영 시각 · 좌표 · 해당 지역)는 휴대전화 안의 데이터베이스에만 저장되며, 앱을 삭제하면 함께 지워집니다.</li>
+      <li>기록으로 남긴 사진은 앱 전용 폴더에 사본으로 저장됩니다. 이 사본도 휴대전화 안에만 있습니다.</li>
+      <li>앱은 <strong>위치(GPS) 권한을 요청하지 않습니다.</strong> 실시간 위치를 추적하지 않으며, 사진에 이미 기록된 위치만 읽습니다.</li>
+      <li>사진 접근을 허용하지 않아도 앱의 지도 색칠 · 메모 기능은 그대로 쓸 수 있습니다. ‘선택한 사진만 허용’을 고르면 고르신 사진만 분석합니다.</li>
+    </ul>
+
+    <h2>4. 함께 칠하기를 쓸 때</h2>
+    <ul>
+      <li>초대 코드를 공유하면, 그 코드를 받은 사람이 지도에 참여할 수 있습니다. 참여자에게는 지도의 <strong>닉네임 · 칠한 기록 · 메모</strong>가 모두 보입니다.</li>
+      <li>초대 코드는 아는 사람에게만 공유해 주세요. 지도 주인은 언제든 참여자를 내보내고, 다시 들어오지 못하게 할 수 있습니다.</li>
+      <li>기기에 저장된 사진은 공유되지 않습니다. 사진은 각자의 휴대전화에만 남습니다.</li>
+    </ul>
+
+    <h2>5. 외부 서비스가 처리하는 정보</h2>
+    <p>앱은 아래 외부 서비스를 사용합니다. 각 서비스는 자신의 개인정보처리방침에 따라 정보를 처리합니다.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>서비스</th><th>쓰는 때</th><th>처리될 수 있는 정보</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google Firebase<br><span class="muted">인증 · 데이터베이스</span></td>
+            <td>앱을 쓰는 동안</td>
+            <td>익명 계정 식별자, 위 2번 표의 정보, 접속에 쓰이는 IP 주소</td>
+          </tr>
+          <tr>
+            <td>Google AdMob<br><span class="muted">광고</span></td>
+            <td>앱을 켜거나 다시 열 때 광고를 보여 줄 때</td>
+            <td>광고 ID(Android 광고 ID, 아이폰 · 아이패드에서 추적을 허용한 경우 IDFA), IP 주소, 기기 · 앱 정보, 광고 조회 · 클릭 정보</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li>Google은 광고를 보여 주고, 광고 성과를 측정하고, 부정 사용을 막기 위해 광고 ID 등의 정보를 사용합니다.</li>
+      <li>유럽경제지역 · 영국 등 동의가 필요한 지역에서는 광고를 보여 주기 전에 동의를 묻습니다.</li>
+      <li>아이폰 · 아이패드에서는 광고 ID(IDFA)를 쓰기 전에 ‘추적 허용’ 여부를 묻습니다. 허용하지 않으면 맞춤이 아닌 광고가 보이며, 설정 → 개인정보 보호 및 보안 → 추적에서 언제든 바꿀 수 있습니다.</li>
+      <li>Android 에서는 설정의 Google → 광고 메뉴에서 광고 ID를 재설정하거나 삭제할 수 있습니다.</li>
+      <li>Google 개인정보처리방침: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li>Firebase 데이터 처리 안내: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+    </ul>
+
+    <h2>6. 보관 기간과 파기</h2>
+    <ul>
+      <li>서버에 저장된 정보는 이용자가 삭제하거나 삭제를 요청할 때까지 보관합니다.</li>
+      <li>지도를 삭제하면 그 지도의 칠한 기록과 메모가 함께 삭제됩니다.</li>
+      <li>휴대전화 안의 정보(사진 위치 인덱스, 기록한 사진 사본)는 앱을 삭제하면 함께 지워집니다.</li>
+    </ul>
+
+    <h2>7. 이용자의 권리와 삭제 방법</h2>
+    <ul>
+      <li>지도 · 메모 삭제: 앱 안에서 직접 지울 수 있습니다.</li>
+      <li>휴대전화 안 데이터 삭제 (Android): 앱을 삭제하거나, 설정 → 애플리케이션 → Color Trip → 저장공간 → 데이터 삭제</li>
+      <li>휴대전화 안 데이터 삭제 (아이폰 · 아이패드): 앱을 삭제하면 함께 지워집니다 (설정 → 일반 → iPhone 저장 공간 → Color Trip)</li>
+      <li>서버에 남은 익명 계정과 지도 전체 삭제: 아래 이메일로 요청해 주시면 처리해 드립니다. 익명 계정이라 본인 확인이 어려우므로, 앱의 설정 화면에 표시되는 계정 식별자를 함께 보내 주세요.</li>
+      <li>광고 ID: Android 는 설정 → Google → 광고, 아이폰 · 아이패드는 설정 → 개인정보 보호 및 보안 → 추적</li>
+    </ul>
+
+    <h2>8. 정보의 안전한 관리</h2>
+    <ul>
+      <li>서버와의 통신은 모두 HTTPS로 암호화됩니다.</li>
+      <li>데이터베이스 접근 규칙을 두어, 지도에 참여한 사람만 그 지도의 기록을 읽고 쓸 수 있습니다.</li>
+      <li>다만 인터넷을 통한 어떤 전송 방법도 100% 안전하다고 보장할 수는 없습니다.</li>
+    </ul>
+
+    <h2>9. 아동의 개인정보</h2>
+    <p>이 앱은 만 14세 이상 이용자를 대상으로 합니다. 개발자는 아동의 개인정보를 의도적으로 수집하지 않으며, 그러한 정보가 수집된 사실을 알게 되면 즉시 삭제합니다.</p>
+
+    <h2>10. 방침의 변경</h2>
+    <p>이 방침이 바뀌면 이 페이지에 새 시행일과 함께 알립니다.</p>
+
+    <h2>11. 문의</h2>
+    <ul>
+      <li>개발자: DGSTUDIO</li>
+      <li>이메일: <a href="mailto:geunsoo7@gmail.com">geunsoo7@gmail.com</a></li>
+    </ul>
+  </article>
+  <footer>© 2026 DGSTUDIO</footer>
+</main>
+</body>
+</html>

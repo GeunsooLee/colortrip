@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Color Trip Privacy Policy</title>
+<meta name="description" content="Privacy policy for Color Trip, a travel map colouring app">
+<link rel="alternate" hreflang="ko" href="https://geunsoolee.github.io/colortrip/privacy/">
+<link rel="alternate" hreflang="en" href="https://geunsoolee.github.io/colortrip/privacy/en/">
+<style>
+  /* 아이폰 · 아이패드(iOS 26 WebKit)는 -apple-system 으로 한글을 물음표 상자로 그려서, 한글만 애플 산돌고딕 Neo 로 이어 준다 */
+  @font-face { font-family: "CT Korean"; font-weight: 400; src: local("Apple SD Gothic Neo"), local("AppleSDGothicNeo-Regular"); unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+AC00-D7FF, U+FF00-FFEF; }
+  @font-face { font-family: "CT Korean"; font-weight: 700; src: local("AppleSDGothicNeo-Bold"); unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+AC00-D7FF, U+FF00-FFEF; }
+  :root {
+    --bg: #fdf2ec; --paper: #fffaf7; --ink: #2c2320; --muted: #7a6a63; --line: #f2ddd2; --accent: #de5a37;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #17120f; --paper: #201815; --ink: #efe3dc; --muted: #a8968d; --line: #3a2d27; --accent: #ff8d6a; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.75 "CT Korean", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    word-break: keep-all; overflow-wrap: anywhere;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+  .card { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 32px 28px; }
+  .top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .eyebrow { margin: 0; font-size: 13px; letter-spacing: 0.25em; color: var(--accent); }
+  .lang { margin: 0; font-size: 14px; color: var(--muted); }
+  .lang a, .lang strong { margin-left: 8px; }
+  h1 { margin: 6px 0 4px; font-size: 28px; line-height: 1.3; }
+  .date { margin: 0 0 24px; color: var(--muted); font-size: 14px; }
+  h2 { margin: 36px 0 10px; font-size: 19px; line-height: 1.4; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 1.2em; margin: 8px 0; }
+  li { margin: 4px 0; }
+  .muted { color: var(--muted); }
+  .lead { border-left: 3px solid var(--accent); padding: 2px 0 2px 14px; margin: 18px 0 0; }
+  .lead li { margin: 6px 0; }
+  .table-wrap { overflow-x: auto; margin: 12px 0; border: 1px solid var(--line); border-radius: 12px; }
+  table { width: 100%; min-width: 560px; border-collapse: collapse; font-size: 14.5px; line-height: 1.6; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 700; background: color-mix(in srgb, var(--line) 45%, transparent); }
+  tr:last-child td { border-bottom: 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 20px; text-align: center; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <article class="card">
+    <div class="top">
+      <p class="eyebrow">COLOR TRIP</p>
+      <p class="lang"><a href="../" hreflang="ko" lang="ko">한국어</a><strong>English</strong></p>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="date">Effective: 16 September 2026</p>
+
+    <p>Color Trip (the “app”) is a travel map colouring app made by DGSTUDIO (the “developer”). You colour in the places you have visited, leave notes, and share a map with friends. This policy explains what information the app handles and how.</p>
+
+    <ul class="lead">
+      <li>There is no sign-up. We never ask for your name, email address or phone number.</li>
+      <li><strong>Your photos are never uploaded.</strong> They are analysed and stored only on your phone.</li>
+      <li>The app does not request location (GPS) permission. It only reads the capture location already stored inside your photos.</li>
+      <li>The regions you colour and the notes you write are stored on the developer’s server (Google Firebase) so that maps can be shared.</li>
+    </ul>
+
+    <h2>1. An anonymous account, created without sign-up</h2>
+    <ul>
+      <li>The first time you open the app, Google Firebase Authentication creates an <strong>anonymous account</strong>. It is just a random string and is not linked to your name, email, phone number or any social account.</li>
+      <li>It is used only to tell which maps are yours and who wrote which note.</li>
+      <li>A default nickname (for example “Traveler A1B2”) is assigned automatically and can be changed at any time in the app. You do not need to use your real name.</li>
+    </ul>
+
+    <h2>2. Information stored on the server</h2>
+    <p>To support shared maps and syncing between devices, the following is stored in Google Firebase (Cloud Firestore, Seoul region).</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>What is stored</th><th>Example</th><th>Why it is needed</th></tr></thead>
+        <tbody>
+          <tr><td>Anonymous account id</td><td>A random string</td><td>To identify your maps and your entries</td></tr>
+          <tr><td>Nickname</td><td>Traveler A1B2, or a name you choose</td><td>To show who coloured what to the people sharing the map</td></tr>
+          <tr><td>Map details</td><td>Map name, invite code, member list</td><td>To share a map with others</td></tr>
+          <tr><td>Colouring records</td><td>Region code, colour, timestamp, who coloured it</td><td>To redraw the map and announce changes</td></tr>
+          <tr><td>Notes</td><td>Text you type (up to 1,000 characters), author, timestamp</td><td>To keep your records and show them to the group</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li>Beyond the above, the developer does not collect or keep advertising identifiers, device information, location or usage logs.</li>
+      <li>Please avoid writing personal or sensitive information in notes — everyone sharing the map can read them.</li>
+    </ul>
+
+    <h2>3. Photos and capture location — they never leave your phone</h2>
+    <ul>
+      <li>The app asks for photo library access so it can read the <strong>capture location (EXIF / PhotoKit)</strong> stored in your photos and suggest the regions you have visited.</li>
+      <li>All of this analysis happens on your phone. Neither the photo files, nor the coordinates, nor the results are <strong>ever sent to a server</strong>.</li>
+      <li>The results (photo identifier, capture time, coordinates, matched region) are stored only in a database on your phone and are removed when you delete the app.</li>
+      <li>Photos you attach to a record are copied into the app’s private folder. Those copies also stay on your phone only.</li>
+      <li>The app <strong>does not request location (GPS) permission</strong>. It never tracks your live location; it only reads what is already written inside a photo.</li>
+      <li>You can decline photo access and still use colouring and notes. If you choose “Selected Photos”, only the photos you picked are analysed.</li>
+    </ul>
+
+    <h2>4. When you share a map</h2>
+    <ul>
+      <li>Anyone you give the invite code to can join the map and will see its <strong>nicknames, colouring records and notes</strong>.</li>
+      <li>Share the invite code only with people you trust. The map owner can remove a member at any time and block them from re-joining.</li>
+      <li>Photos stored on your phone are not shared. They stay on each person’s own device.</li>
+    </ul>
+
+    <h2>5. Third-party services</h2>
+    <p>The app uses the services below. Each provider handles information under its own privacy policy.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Service</th><th>When it is used</th><th>Information it may process</th></tr></thead>
+        <tbody>
+          <tr><td>Google Firebase<br><span class="muted">auth &amp; database</span></td><td>While you use the app</td><td>Anonymous account id, the information in the table above, and the IP address used to connect</td></tr>
+          <tr><td>Google AdMob<br><span class="muted">advertising</span></td><td>When an ad is shown as you open or return to the app</td><td>Advertising ID (Android Advertising ID, or IDFA on iPhone/iPad if you allow tracking), IP address, device and app information, ad views and clicks</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li>Google uses this information to serve ads, measure ad performance and prevent abuse.</li>
+      <li>In regions that require consent, such as the EEA and the UK, you are asked for consent before ads are shown.</li>
+      <li>On iPhone and iPad you are asked whether to allow tracking before the advertising identifier (IDFA) is used. If you decline, you will see non-personalised ads; you can change this at any time in Settings → Privacy &amp; Security → Tracking.</li>
+      <li>On Android you can reset or delete your advertising ID in Settings → Google → Ads.</li>
+      <li>Google Privacy Policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></li>
+      <li>Firebase data processing: <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></li>
+    </ul>
+
+    <h2>6. Retention and deletion</h2>
+    <ul>
+      <li>Information on the server is kept until you delete it or ask us to delete it.</li>
+      <li>Deleting a map also deletes that map’s colouring records and notes.</li>
+      <li>Information on your phone (the photo location index and attached photo copies) is removed when you delete the app.</li>
+    </ul>
+
+    <h2>7. Your rights and how to delete your data</h2>
+    <ul>
+      <li>Maps and notes: delete them directly in the app.</li>
+      <li>On-device data (Android): uninstall the app, or Settings → Apps → Color Trip → Storage → Clear data.</li>
+      <li>On-device data (iPhone/iPad): deleting the app removes it (Settings → General → iPhone Storage → Color Trip).</li>
+      <li>Deleting your anonymous account and all maps from the server: email us at the address below. Because the account is anonymous we cannot verify you otherwise, so please include the account identifier shown on the app’s settings screen.</li>
+      <li>Advertising ID: Android — Settings → Google → Ads; iPhone/iPad — Settings → Privacy &amp; Security → Tracking.</li>
+    </ul>
+
+    <h2>8. Keeping information safe</h2>
+    <ul>
+      <li>All communication with the server is encrypted with HTTPS.</li>
+      <li>Database access rules ensure that only members of a map can read or write that map’s records.</li>
+      <li>That said, no method of transmission over the internet can be guaranteed to be completely secure.</li>
+    </ul>
+
+    <h2>9. Children’s privacy</h2>
+    <p>This app is intended for users aged 14 and over. The developer does not knowingly collect personal information from children and will delete any such information promptly if it comes to light.</p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>If this policy changes, the updated version and its effective date will be posted on this page.</p>
+
+    <h2>11. Contact</h2>
+    <ul>
+      <li>Developer: DGSTUDIO</li>
+      <li>Email: <a href="mailto:geunsoo7@gmail.com">geunsoo7@gmail.com</a></li>
+    </ul>
+  </article>
+  <footer>© 2026 DGSTUDIO</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Color Trip</title>
+<meta name="description" content="다녀온 곳을 지도에 색칠하는 여행 기록 앱, Color Trip">
+<style>
+  /* 아이폰 · 아이패드(iOS 26 WebKit)는 -apple-system 으로 한글을 물음표 상자로 그려서, 한글만 애플 산돌고딕 Neo 로 이어 준다 */
+  @font-face { font-family: "CT Korean"; font-weight: 400; src: local("Apple SD Gothic Neo"), local("AppleSDGothicNeo-Regular"); unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+AC00-D7FF, U+FF00-FFEF; }
+  @font-face { font-family: "CT Korean"; font-weight: 700; src: local("AppleSDGothicNeo-Bold"); unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+AC00-D7FF, U+FF00-FFEF; }
+  :root {
+    --bg: #fdf2ec; --paper: #fffaf7; --ink: #2c2320; --muted: #7a6a63; --line: #f2ddd2; --accent: #de5a37;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #17120f; --paper: #201815; --ink: #efe3dc; --muted: #a8968d; --line: #3a2d27; --accent: #ff8d6a; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.75 "CT Korean", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    word-break: keep-all; overflow-wrap: anywhere;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+  .card { background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 32px 28px; }
+  .top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  .eyebrow { margin: 0; font-size: 13px; letter-spacing: 0.25em; color: var(--accent); }
+  .lang { margin: 0; font-size: 14px; color: var(--muted); }
+  .lang a, .lang strong { margin-left: 8px; }
+  h1 { margin: 6px 0 4px; font-size: 28px; line-height: 1.3; }
+  .date { margin: 0 0 24px; color: var(--muted); font-size: 14px; }
+  h2 { margin: 36px 0 10px; font-size: 19px; line-height: 1.4; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 1.2em; margin: 8px 0; }
+  li { margin: 4px 0; }
+  .muted { color: var(--muted); }
+  .lead { border-left: 3px solid var(--accent); padding: 2px 0 2px 14px; margin: 18px 0 0; }
+  .lead li { margin: 6px 0; }
+  .table-wrap { overflow-x: auto; margin: 12px 0; border: 1px solid var(--line); border-radius: 12px; }
+  table { width: 100%; min-width: 560px; border-collapse: collapse; font-size: 14.5px; line-height: 1.6; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { font-weight: 700; background: color-mix(in srgb, var(--line) 45%, transparent); }
+  tr:last-child td { border-bottom: 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 20px; text-align: center; font-size: 13px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <article class="card">
+    <p class="eyebrow">COLOR TRIP</p>
+    <h1>여행 지도 색칠</h1>
+    <p class="date">DGSTUDIO</p>
+    <p>다녀온 곳을 지도에 색칠하며 기록하는 앱입니다. 한국(시 · 군 · 구), 일본, 미국, 유럽, 세계 지도를 지원하고, 사진에 담긴 촬영 위치로 다녀온 지역을 찾아 줍니다. 친구와 지도 하나를 함께 칠할 수도 있습니다.</p>
+    <h2>문서</h2>
+    <ul>
+      <li><a href="privacy/">개인정보처리방침</a> · <a href="privacy/en/">Privacy Policy (English)</a></li>
+    </ul>
+    <h2>문의</h2>
+    <ul>
+      <li><a href="mailto:geunsoo7@gmail.com">geunsoo7@gmail.com</a></li>
+    </ul>
+  </article>
+  <footer>© 2026 DGSTUDIO</footer>
+</main>
+</body>
+</html>
